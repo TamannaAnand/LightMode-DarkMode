@@ -27,7 +27,7 @@ function ThemeToggler() {
     return (
         <div style={styles}>
             <button onClick={handleClick}>
-                Switch to Light Mode
+                {`Switch to ${darkMode ? 'Dark Mode' : 'Light Mode'}`}
             </button>
             <MessageDisplay isDarkMode={darkMode} />
         </div>
