@@ -1,4 +1,5 @@
 import { useState } from "react"
+import MessageDisplay from "./MessageDisplay";
 
 function ThemeToggler() {
 
@@ -28,7 +29,7 @@ function ThemeToggler() {
             <button onClick={handleClick}>
                 Switch to Light Mode
             </button>
-            Some Text
+            <MessageDisplay isDarkMode={darkMode} />
         </div>
     )
 
